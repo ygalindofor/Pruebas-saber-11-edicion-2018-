@@ -3,4 +3,3 @@ En Colombia se manejan unas pruebas saber 11 las cuales miden el rendimiento aca
 
 El Dataset cuenta con 83 columnas y 549935 filas.
 
-Untitled0.ipynb
