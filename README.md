@@ -19,8 +19,7 @@ Fuera un
 
 ### json       pd.read_json()
 ### excel      pd.read_excel()
-### sql
-pd.read_sql()
+### sql        pd.read_sql()
 
 hay que tener encuenta con que caracter estan separados los datos en este caso
 es con , y por ello se añade la sintaxis sep=','
@@ -66,7 +65,7 @@ En PUNT_MATEMATICAS tenemos datos de tipo entero
 el resto de los registros son
 objetos
 
-# Seleccion de renglones
+### Seleccion de renglones
 
 Se puede hacer la seleccion de renglones en los que se encuentre el municipio de
 Soacha 
@@ -79,7 +78,7 @@ iloc que es por ubicacion
 pruebasSaber11_df.set_index("ESTU_MCPIO_RESIDE", inplace=True)
 pruebasSaber11_df.loc['SOACHA']
 ```
-
+### Media
 Luego de ello se extrae la media de la unica varable que tenemos en este caso de
 tipo numerico
 
