@@ -1,5 +1,4 @@
-# Analisis de los resultados de las pruebas saber 11 edicion 2018 a traves de
-tecnicas de mineria de datos
+# Analisis de los resultados de las pruebas saber 11 edicion 2018 a traves de tecnicas de mineria de datos
 
 primero se importan las librerias necesarias
 
