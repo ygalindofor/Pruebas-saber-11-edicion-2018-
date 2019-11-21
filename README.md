@@ -34,7 +34,7 @@ pruebasSaber11_df = pd.read_csv(url, sep=',', low_memory=False)
 
 ```
 
-a traves de df.head(n) puedo mostrar las primeras filas del dataset
+a traves de df.head(n) se puede mostrar las primeras filas del dataset
 
 ```python
 pruebasSaber11_df.head(10)
@@ -53,6 +53,19 @@ pruebasSaber11_df = pruebasSaber11_df.iloc[:, [13,16, 22, 24, 64]]
 pruebasSaber11_df.head(10)
 ```
 
+### Tipos de registros y valores nulos
+
+```python
+assert pruebasSaber11_df.notnull().all().all()
+pruebasSaber11_df.info()
+```
+
+no se encontraron valores nulos en las variables escogidas
+
+En PUNT_MATEMATICAS tenemos datos de tipo entero 
+el resto de los registros son
+objetos
+
 # Seleccion de renglones
 
 Se puede hacer la seleccion de renglones en los que se encuentre el municipio de
@@ -65,4 +78,11 @@ iloc que es por ubicacion
 ```python
 pruebasSaber11_df.set_index("ESTU_MCPIO_RESIDE", inplace=True)
 pruebasSaber11_df.loc['SOACHA']
+```
+
+Luego de ello se extrae la media de la unica varable que tenemos en este caso de
+tipo numerico
+
+```python
+pruebasSaber11_df.mean()
 ```
